@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.9)  7 AUG 2025 11:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.9)  7 AUG 2025 19:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1102,35 +1102,6 @@ LaTeX Font Info:    Font shape `T1/txss/m/n' will be
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <10> not available
 (Font)              Font shape `T1/txr/bx/n' tried instead on input line 50.
 
-
-Package natbib Warning: Citation `Launhardt_2002' on page 1 undefined on input 
-line 58.
-
-
-Package natbib Warning: Citation `NSD_size1' on page 1 undefined on input line 
-58.
-
-
-Package natbib Warning: Citation `Laly_2020' on page 1 undefined on input line 
-58.
-
-
-Package natbib Warning: Citation `Lyman_flux' on page 1 undefined on input line
- 58.
-
-
-Package natbib Warning: Citation `Lyman_flux_II' on page 1 undefined on input l
-ine 58.
-
-
-Package natbib Warning: Citation `Lyman_flux_III' on page 1 undefined on input 
-line 58.
-
-
-Package natbib Warning: Citation `Paco_sfh' on page 1 undefined on input line 5
-8.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
 []\T1/txr/m/n/10 Located at a dis-tance of $\OMS/txsy/m/n/10 ^^X$\T1/txr/m/n/10
  8.2kpc from Earth
@@ -1142,33 +1113,19 @@ Underfull \hbox (badness 4673) in paragraph at lines 58--59
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 58--59
-\T1/txr/bx/n/10 ?\T1/txr/m/n/10 ; \T1/txr/bx/n/10 ?\T1/txr/m/n/10 ; [][][][][] 
-[][]2022[][]). De-spite its small vol-ume^^Vless
+Underfull \hbox (badness 5878) in paragraph at lines 58--59
+\T1/txr/m/n/10 struc-ture ap-prox-i-mately 150^^U200pc across and 40^^U50pc
  []
 
 
-Package natbib Warning: Citation `Paco_sfh' on page 1 undefined on input line 6
-0.
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+\T1/txr/m/n/10 in scale height ([][][][][] [][]2002a[][]; [][][][][]
+ []
 
 
-Package natbib Warning: Citation `Bartko_2010' on page 1 undefined on input lin
-e 60.
-
-
-Package natbib Warning: Citation `Lu_2013' on page 1 undefined on input line 60
-.
-
-
-Package natbib Warning: Citation `Massive_stars' on page 1 undefined on input l
-ine 60.
-
-
-Package natbib Warning: Citation `Cano' on page 1 undefined on input line 60.
-
-
-Package natbib Warning: Citation `Clark_2023' on page 1 undefined on input line
- 60.
+Underfull \hbox (badness 3471) in paragraph at lines 58--59
+[][]\T1/txr/m/n/10 2015[][]; [][][][][] [][]2022[][]; [][][][][] [][]2020[][];
+ []
 
 
 Underfull \hbox (badness 1237) in paragraph at lines 60--61
@@ -1176,177 +1133,142 @@ Underfull \hbox (badness 1237) in paragraph at lines 60--61
  []
 
 
+Underfull \hbox (badness 1270) in paragraph at lines 62--63
+[][]\T1/txr/m/n/10 2013[][]). In ad-di-tion, young and ap-par-ently iso-lated m
+as-sive
+ []
+
+
 Package natbib Warning: Citation `extinction_los' on page 1 undefined on input 
-line 62.
+line 65.
 
 
-Package natbib Warning: Citation `spec_class_1' on page 1 undefined on input li
-ne 64.
-
-
-Package natbib Warning: Citation `spec_class_2' on page 1 undefined on input li
-ne 64.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
-[]\T1/txr/m/n/10 An al-ter-na-tive method is to iden-tify co-moving
+Underfull \hbox (badness 1092) in paragraph at lines 65--66
+\U/txsya/m/n/10 .$\T1/txr/m/n/10 10Myr ([][][][][] [][]2001[][]; [][][][][] [][
+]2014[][]),
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 66--67
-\T1/txr/m/n/10 groups^^Vassociations of stars shar-ing sim-i-lar po-si-tions an
-d
- []
-
-
-Underfull \hbox (badness 1371) in paragraph at lines 66--67
-\T1/txr/m/n/10 field. While cur-rent cat-a-logs for the GC pro-vide ac-cu-rate
- []
-
-
-Package natbib Warning: Citation `dbscan' on page 1 undefined on input line 68.
+Package natbib Warning: Citation `dbscan' on page 1 undefined on input line 69.
 
 
 
 Package natbib Warning: Citation `Castro2018' on page 1 undefined on input line
- 68.
+ 69.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+[1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
 
-Package natbib Warning: Citation `Massive_stars' on page 2 undefined on input l
-ine 70.
-
-
 Package natbib Warning: Citation `HII_regions' on page 2 undefined on input lin
-e 70.
+e 77.
 
 
-Package natbib Warning: Citation `Blue_SG' on page 2 undefined on input line 70
+Package natbib Warning: Citation `Blue_SG' on page 2 undefined on input line 77
 .
 
 
 Package natbib Warning: Citation `LIBRALA2021' on page 2 undefined on input lin
-e 70.
+e 77.
 
 
-Package natbib Warning: Citation `Launhardt_2002' on page 2 undefined on input 
-line 78.
+Underfull \hbox (badness 1648) in paragraph at lines 77--78
+\T1/txr/m/n/10 ing the pres-ence of young, mas-sive stars. Cross-matching
+ []
 
 
 Package natbib Warning: Citation `extinction_los' on page 2 undefined on input 
-line 78.
-
-
-Package natbib Warning: Citation `spec_class_1' on page 2 undefined on input li
-ne 78.
-
-
-Package natbib Warning: Citation `spec_class_2' on page 2 undefined on input li
-ne 78.
+line 85.
 
 
 Package natbib Warning: Citation `HII_regions' on page 2 undefined on input lin
-e 78.
+e 85.
 
 
-Package natbib Warning: Citation `Blue_SG' on page 2 undefined on input line 78
+Package natbib Warning: Citation `Blue_SG' on page 2 undefined on input line 85
 .
 
 
-Package natbib Warning: Citation `Massive_stars' on page 2 undefined on input l
-ine 78.
-
-
 Package natbib Warning: Citation `LIBRALA2021' on page 2 undefined on input lin
-e 78.
+e 85.
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 78--79
-\T1/txr/m/n/10 tidal fields and shocks can dis-solve even mas-sive clus-ters
- []
-
-
-Underfull \hbox (badness 1014) in paragraph at lines 78--79
-\T1/txr/m/n/10 like Sgr B1 and Sgr C by an-a-lyz-ing lu-mi-nos-ity func-tions
+Underfull \hbox (badness 1152) in paragraph at lines 85--86
+\T1/txr/m/n/10 ([][][][][] [][]2001[][]; [][][][][] [][]2014[][]), blend-ing
  []
 
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 88.
+(Font)              scaled to size 9.49997pt on input line 95.
 LaTeX Font Info:    Font shape `T1/txss/m/it' in size <10> not available
-(Font)              Font shape `T1/txss/m/sl' tried instead on input line 88.
+(Font)              Font shape `T1/txss/m/sl' tried instead on input line 95.
 LaTeX Font Info:    Font shape `T1/txss/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 88.
+(Font)              scaled to size 9.49997pt on input line 95.
 
-Underfull \hbox (badness 1048) in paragraph at lines 92--93
+Underfull \hbox (badness 1048) in paragraph at lines 99--100
 []\T1/txr/m/n/10 The GNS cat-a-log ([][][][][] [][]2019a[][], here-after
  []
 
-<../images/gc_view.png, id=175, 554.7927pt x 339.4281pt>
+<../images/gc_view.png, id=223, 554.7927pt x 339.4281pt>
 File: ../images/gc_view.png Graphic file (type png)
 <use ../images/gc_view.png>
-Package pdftex.def Info: ../images/gc_view.png  used on input line 96.
+Package pdftex.def Info: ../images/gc_view.png  used on input line 103.
 (pdftex.def)             Requested size: 256.0748pt x 156.6671pt.
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <9> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 97.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 104.
 
-Underfull \hbox (badness 1264) in paragraph at lines 101--102
+Underfull \hbox (badness 1264) in paragraph at lines 108--109
 \T1/txr/m/n/10 ing data was ac-quired,hereafter termed GNSII, ove-lap-ping
  []
 
 [2]
-<../images/distort_F20_f06_HKs_3.pdf, id=200, 845.0471pt x 597.50829pt>
+<../images/distort_F20_f06_HKs_3.pdf, id=249, 845.0471pt x 597.50829pt>
 File: ../images/distort_F20_f06_HKs_3.pdf Graphic file (type pdf)
 <use ../images/distort_F20_f06_HKs_3.pdf>
 Package pdftex.def Info: ../images/distort_F20_f06_HKs_3.pdf  used on input lin
-e 146.
+e 153.
 (pdftex.def)             Requested size: 256.0748pt x 181.05907pt.
-<../images/dpos_lb_H.png, id=206, 1472.1399pt x 463.0098pt>
+<../images/dpos_lb_H.png, id=255, 1472.1399pt x 463.0098pt>
 File: ../images/dpos_lb_H.png Graphic file (type png)
 <use ../images/dpos_lb_H.png>
-Package pdftex.def Info: ../images/dpos_lb_H.png  used on input line 172.
+Package pdftex.def Info: ../images/dpos_lb_H.png  used on input line 179.
 (pdftex.def)             Requested size: 256.0748pt x 80.53337pt.
  [3 <../images/gc_view.png> <../images/distort_F20_f06_HKs_3.pdf> <../images/dp
 os_lb_H.png>]
 
-LaTeX Warning: Reference `' on page 4 undefined on input line 187.
+LaTeX Warning: Reference `' on page 4 undefined on input line 194.
 
-<../images/gaia_resi_pm.png, id=235, 619.113pt x 340.6326pt>
+<../images/gaia_resi_pm.png, id=285, 619.113pt x 340.6326pt>
 File: ../images/gaia_resi_pm.png Graphic file (type png)
 <use ../images/gaia_resi_pm.png>
-Package pdftex.def Info: ../images/gaia_resi_pm.png  used on input line 195.
+Package pdftex.def Info: ../images/gaia_resi_pm.png  used on input line 202.
 (pdftex.def)             Requested size: 230.46574pt x 126.80133pt.
 (./sgrb1_clus.bbl)
 
 Package natbib Warning: There were undefined citations.
 
 [4 <../images/gaia_resi_pm.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
  (./sgrb1_clus.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
 Package rerunfilecheck Info: File `sgrb1_clus.out' has not changed.
 (rerunfilecheck)             Checksum: 4B6F16FE8994EF260FB66F8CBC323D05;558.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
  ) 
 Here is how much of TeX's memory you used:
- 21753 strings out of 480608
- 395832 string characters out of 5903630
- 673365 words of memory out of 5000000
- 37074 multiletter control sequences out of 15000+600000
+ 21805 strings out of 480608
+ 396753 string characters out of 5903630
+ 676033 words of memory out of 5000000
+ 37113 multiletter control sequences out of 15000+600000
  635587 words of font info for 198 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,60p,2544b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,60p,2545b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/local/texlive
 /2020/texmf-dist/fonts/type1/public/txfonts/rtxbmi.pfb></usr/local/texlive/2020
@@ -1363,10 +1285,10 @@ texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/20
 20/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on sgrb1_clus.pdf (4 pages, 4639774 bytes).
+Output written on sgrb1_clus.pdf (4 pages, 4644906 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 329 compressed objects within 4 object streams
+ 62 named destinations out of 1000 (max. 500000)
  105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

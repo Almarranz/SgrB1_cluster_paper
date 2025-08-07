@@ -1,5 +1,11 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{39}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Bartko} {et~al.}(2010){Bartko}, {Martins}, {Trippe}, {Fritz},
+  {Genzel}, {Ott}, {Eisenhauer}, {Gillessen}, {Paumard}, {Alexander},
+  {Dodds-Eden}, {Gerhard}, {Levin}, {Mascetti}, {Nayakshin}, {Perets},
+  {Perrin}, {Pfuhl}, {Reid}, {Rouan}, {Zilka}, \& {Sternberg}}]{Bartko_2010}
+{Bartko}, H., {Martins}, F., {Trippe}, S., {et~al.} 2010, \apj, 708, 834
 
 \bibitem[{{Beroiz} {et~al.}(2020){Beroiz}, {Cabral}, \& {Sanchez}}]{Astroalign}
 {Beroiz}, M., {Cabral}, J.~B., \& {Sanchez}, B. 2020, Astronomy and Computing,
@@ -23,6 +29,21 @@
 \bibitem[{{Bouy} {et~al.}(2013){Bouy}, {Bertin}, {Moraux}, {Cuillandre},
   {Bouvier}, {Barrado}, {Solano}, \& {Bayo}}]{2013A&A...554A.101B}
 {Bouy}, H., {Bertin}, E., {Moraux}, E., {et~al.} 2013, \aap, 554, A101
+
+\bibitem[{{Cano-Gonz{\'a}lez} {et~al.}(2021){Cano-Gonz{\'a}lez}, {Sch{\"o}del},
+  \& {Nogueras-Lara}}]{Cano}
+{Cano-Gonz{\'a}lez}, M., {Sch{\"o}del}, R., \& {Nogueras-Lara}, F. 2021, \aap,
+  653, A37
+
+\bibitem[{{Clark} {et~al.}(2023){Clark}, {Lohr}, {Najarro}, {Patrick}, \&
+  {Ritchie}}]{Clark_2023}
+{Clark}, J.~S., {Lohr}, M.~E., {Najarro}, F., {Patrick}, L.~R., \& {Ritchie},
+  B.~W. 2023, \mnras, 521, 4473
+
+\bibitem[{Dong {et~al.}(2011)Dong, Wang, Cotera, Stolovy, Morris, Mauerhan,
+  Mills, Schneider, Calzetti, \& Lang}]{Massive_stars}
+Dong, H., Wang, Q.~D., Cotera, A., {et~al.} 2011, Monthly Notices of the Royal
+  Astronomical Society, 417, 114
 
 \bibitem[{{Gaia Collaboration} {et~al.}(2023){Gaia Collaboration}, {Vallenari},
   {Brown}, {Prusti}, {de Bruijne}, {Arenou}, {Babusiaux}, {Biermann},
@@ -62,6 +83,12 @@
 {Gaia Collaboration}, {Vallenari}, A., {Brown}, A.~G.~A., {et~al.} 2023, \aap,
   674, A1
 
+\bibitem[{{Gallego-Cano} {et~al.}(2020){Gallego-Cano}, {Sch{\"o}del},
+  {Nogueras-Lara}, {Dong}, {Shahzamanian}, {Fritz}, {Gallego-Calvente}, \&
+  {Neumayer}}]{Laly_2020}
+{Gallego-Cano}, E., {Sch{\"o}del}, R., {Nogueras-Lara}, F., {et~al.} 2020,
+  \aap, 634, A71
+
 \bibitem[{{GRAVITY Collaboration} {et~al.}(2020){GRAVITY Collaboration},
   {Abuter}, {Amorim}, {Baub{\"o}ck}, {Berger}, {Bonnet}, {Brandner}, {Cardoso},
   {Cl{\'e}net}, {de Zeeuw}, {Dexter}, {Eckart}, {Eisenhauer}, {F{\"o}rster
@@ -76,20 +103,54 @@
 {GRAVITY Collaboration}, {Abuter}, R., {Amorim}, A., {et~al.} 2020, \aap, 636,
   L5
 
+\bibitem[{{Habibi} {et~al.}(2019){Habibi}, {Gillessen}, {Pfuhl}, {Eisenhauer},
+  {Plewa}, {von Fellenberg}, {Widmann}, {Ott}, {Gao}, {Waisberg},
+  {Baub{\"o}ck}, {Jimenez-Rosales}, {Dexter}, {de Zeeuw}, \&
+  {Genzel}}]{spec_class_2}
+{Habibi}, M., {Gillessen}, S., {Pfuhl}, O., {et~al.} 2019, \apjl, 872, L15
+
 \bibitem[{{Kruijssen} {et~al.}(2014){Kruijssen}, {Longmore}, {Elmegreen},
   {Murray}, {Bally}, {Testi}, \& {Kennicutt}}]{cluster_dissolution}
 {Kruijssen}, J.~M.~D., {Longmore}, S.~N., {Elmegreen}, B.~G., {et~al.} 2014,
   \mnras, 440, 3370
 
-\bibitem[{{Mart{\'\i}nez-Arranz} {et~al.}(2024){Mart{\'\i}nez-Arranz},
-  {Sch{\"o}del}, {Nogueras-Lara}, {Hosek}, \& {Najarro}}]{comuving_yo}
+\bibitem[{{Launhardt} {et~al.}(2002{\natexlab{a}}){Launhardt}, {Zylka}, \&
+  {Mezger}}]{Launhardt_2002}
+{Launhardt}, R., {Zylka}, R., \& {Mezger}, P.~G. 2002{\natexlab{a}}, \aap, 384,
+  112
+
+\bibitem[{{Launhardt} {et~al.}(2002{\natexlab{b}}){Launhardt}, {Zylka}, \&
+  {Mezger}}]{Lyman_flux}
+{Launhardt}, R., {Zylka}, R., \& {Mezger}, P.~G. 2002{\natexlab{b}}, \aap, 384,
+  112
+
+\bibitem[{{Lu} {et~al.}(2013){Lu}, {Do}, {Ghez}, {Morris}, {Yelda}, \&
+  {Matthews}}]{Lu_2013}
+{Lu}, J.~R., {Do}, T., {Ghez}, A.~M., {et~al.} 2013, \apj, 764, 155
+
+\bibitem[{{Mart{\'\i}nez-Arranz}
+  {et~al.}(2024{\natexlab{a}}){Mart{\'\i}nez-Arranz}, {Sch{\"o}del},
+  {Nogueras-Lara}, {Hosek}, \& {Najarro}}]{comuving_yo}
 {Mart{\'\i}nez-Arranz}, {\'A}., {Sch{\"o}del}, R., {Nogueras-Lara}, F.,
-  {Hosek}, M.~W., \& {Najarro}, F. 2024, \aap, 683, A3
+  {Hosek}, M.~W., \& {Najarro}, F. 2024{\natexlab{a}}, \aap, 683, A3
+
+\bibitem[{{Mart{\'\i}nez-Arranz}
+  {et~al.}(2024{\natexlab{b}}){Mart{\'\i}nez-Arranz}, {Sch{\"o}del},
+  {Nogueras-Lara}, {Najarro}, {Castellanos}, \& {Fedriani}}]{Candela}
+{Mart{\'\i}nez-Arranz}, A., {Sch{\"o}del}, R., {Nogueras-Lara}, F., {et~al.}
+  2024{\natexlab{b}}, \aap, 685, L7
 
 \bibitem[{{Matsunaga} {et~al.}(2011){Matsunaga}, {Kawadu}, {Nishiyama},
   {Nagayama}, {Kobayashi}, {Tamura}, {Bono}, {Feast}, \&
   {Nagata}}]{three_cepheids}
 {Matsunaga}, N., {Kawadu}, T., {Nishiyama}, S., {et~al.} 2011, \nat, 477, 188
+
+\bibitem[{{Morris} \& {Serabyn}(1996)}]{Lyman_flux_III}
+{Morris}, M. \& {Serabyn}, E. 1996, \araa, 34, 645
+
+\bibitem[{{Nishiyama} {et~al.}(2008){Nishiyama}, {Nagata}, {Tamura}, {Kandori},
+  {Hatano}, {Sato}, \& {Sugitani}}]{Lyman_flux_II}
+{Nishiyama}, S., {Nagata}, T., {Tamura}, M., {et~al.} 2008, \apj, 680, 1174
 
 \bibitem[{{Nogueras-Lara}(2022)}]{paco_NSD}
 {Nogueras-Lara}, F. 2022, \aap, 668, L8
@@ -138,6 +199,11 @@
   Photo-Optical Instrumentation Engineers (SPIE) Conference Series, Vol. 7736,
   Adaptive Optics Systems II, ed. B.~L. {Ellerbroek}, M.~{Hart}, N.~{Hubin}, \&
   P.~L. {Wizinowich}, 77361P
+
+\bibitem[{{Paumard} {et~al.}(2006){Paumard}, {Genzel}, {Martins}, {Nayakshin},
+  {Beloborodov}, {Levin}, {Trippe}, {Eisenhauer}, {Ott}, {Gillessen}, {Abuter},
+  {Cuadra}, {Alexander}, \& {Sternberg}}]{spec_class_1}
+{Paumard}, T., {Genzel}, R., {Martins}, F., {et~al.} 2006, \apj, 643, 1011
 
 \bibitem[{Portegies~Zwart {et~al.}(2001)Portegies~Zwart, Makino, McMillan, \&
   Hut}]{dissolve_GC}
