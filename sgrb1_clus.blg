@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: sgrb1_clus.aux
+The style file: aa.bst
+Database file #1: references.bib
+Warning--I didn't find a database entry for "Launhardt_2002"
+Warning--I didn't find a database entry for "NSD_size1"
+Warning--I didn't find a database entry for "Laly_2020"
+Warning--I didn't find a database entry for "Lyman_flux"
+Warning--I didn't find a database entry for "Lyman_flux_II"
+Warning--I didn't find a database entry for "Lyman_flux_III"
+Warning--I didn't find a database entry for "Paco_sfh"
+Warning--I didn't find a database entry for "Bartko_2010"
+Warning--I didn't find a database entry for "Lu_2013"
+Warning--I didn't find a database entry for "Massive_stars"
+Warning--I didn't find a database entry for "Cano"
+Warning--I didn't find a database entry for "Clark_2023"
+Warning--I didn't find a database entry for "extinction_los"
+Warning--I didn't find a database entry for "spec_class_1"
+Warning--I didn't find a database entry for "spec_class_2"
+Warning--I didn't find a database entry for "dbscan"
+Warning--I didn't find a database entry for "Castro2018"
+Warning--I didn't find a database entry for "HII_regions"
+Warning--I didn't find a database entry for "Blue_SG"
+Warning--I didn't find a database entry for "LIBRALA2021"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 26 entries,
+            3039 wiz_defined-function locations,
+            904 strings with 17445 characters,
+and the built_in function-call counts, 28383 in all, are:
+= -- 2071
+> -- 3898
+< -- 8
++ -- 1305
+- -- 1276
+* -- 2745
+:= -- 5310
+add.period$ -- 26
+call.type$ -- 26
+change.case$ -- 524
+chr.to.int$ -- 25
+cite$ -- 26
+duplicate$ -- 521
+empty$ -- 750
+format.name$ -- 1338
+if$ -- 5538
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 22
+newline$ -- 82
+num.names$ -- 108
+pop$ -- 531
+preamble$ -- 1
+purify$ -- 524
+quote$ -- 0
+skip$ -- 470
+stack$ -- 0
+substring$ -- 604
+swap$ -- 42
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 234
+warning$ -- 0
+while$ -- 108
+width$ -- 0
+write$ -- 263
+(There were 20 warnings)

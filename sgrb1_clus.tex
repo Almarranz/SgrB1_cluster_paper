@@ -1,0 +1,224 @@
+\documentclass{aa} % use aa.cls from the A&A package
+
+\usepackage[varg]{txfonts} % A&A recommends txfonts
+\usepackage{graphicx}      % for including figures
+\usepackage{hyperref}      % for hyperlinks
+\usepackage{amsmath,amssymb} % common math packages
+\usepackage{natbib}        % bibliography
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+% Optional: if you're using colored links (for drafts)
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	citecolor=blue,
+	urlcolor=blue,
+}
+
+\begin{document}
+	
+	\title{GALACTICNUCLEUS proper motion catalog}
+	
+	\author{Martínez Arranz, Á\inst{1} \and Schödel, R\inst{2}}
+	\institute{
+		Instituto de Astrofísica de Andalucía, Glorieta de la astronomía, Granada, Spain \\
+		\email{amatínez@iaa.csic.es}
+		\and
+		yomama
+	}
+	
+	\date{Received xx / Accepted xx}
+	
+	\abstract
+	% context heading (optional)
+	{This is the context.}
+	% aims heading (mandatory)
+	{This is what the study aims to explore.}
+	% methods heading (mandatory)
+	{This is how it was done.}
+	% results heading (mandatory)
+	{These are the results.}
+	% conclusions heading (optional), leave it empty if necessary
+	{These are the conclusions.}
+	
+	\keywords{Galaxy: center -- stars: formation -- proper motions -- catalogs -- surveys}
+	
+	\maketitle
+	
+	\section{Introduction}
+	\begin{itemize}
+		\item Other catologs are shallow
+		\item Other catalogs do not cover enough area in the NSD
+		\item Other catalogs do not have enough precision 	
+	    \item Top-heavy IMF in Arches and Quintuple? Is this a consequence of this extreme enviroment? We need more cluster to study?
+	    \item Top-heavy IMF in Arches and Quintuple? Is this a consequence of this extreme enviroment? We need more cluster to study? 	 	
+	    \item we present the first results of the GNS proper motion catalog
+	\end{itemize}
+	
+	Located at a distance of $\sim$8.2\,kpc from Earth \citep{GC_distance_gravity}, the Galactic Center (GC) hosts the Nuclear Stellar Disk (NSD), a flat, rotating structure approximately 150–200\,pc across and 40–50\,pc in scale height \citep{Launhardt_2002, Sch2015, Ban_catalog, NSD_size1, Laly_2020, Sormani2022}. Despite its small volume—less than 1\% of the Galaxy—the NSD is among the most active star-forming regions in the Milky Way, emitting about 10\% of the total Lyman continuum flux \citep{Lyman_flux, Lyman_flux_II, Lyman_flux_III} and having formed roughly $10^6$\,M$_\odot$ of stars in the last $\sim$10\,Myr \citep{three_cepheids, paco_nature_2020, Paco_sfh}.
+	
+	The bulk of the NSD's stellar population is old, with ages $\gtrsim$\,8\,Gyr \citep{Paco_sfh}. However, multiple lines of evidence suggest intense and recent star formation episodes within the past 30\,Myr, with estimated star formation rates between 0.2 and 0.8\,M$_\odot$/yr \citep{three_cepheids, paco_nature_2020}. Despite these indicators, only a few young clusters have been identified: the Arches and Quintuplet clusters \citep{Bartko_2010, Lu_2013}, each $\sim$25\,pc in projection from Sgr A* and $\sim$2–6\,Myr old with masses of $\sim10^4$\,M$_\odot$, as well as the population of young stars in the central parsec. A handful of massive young stars are scattered throughout the inner 100\,pc \citep[e.g.][]{Massive_stars, Cano, Clark_2023}, and recent luminosity function analysis has revealed up to $\sim10^5$\,M$_\odot$ of $\sim$10\,Myr-old stars in the Sgr B1 and Sgr C regions \citep{Paco_B1, Paco_SgrC}. Still, these identified stars account for only a fraction of the expected stellar mass, highlighting the so-called ``missing clusters'' problem.
+	
+	This discrepancy is likely due to the unique and extreme environment of the GC. High stellar surface densities make it difficult to detect stellar overdensities, especially once clusters begin dissolving. In addition, the strong and variable interstellar extinction in the GC, which limits observations to the near-infrared \citep{extinction_los, paco_exctinction}, prevents accurate photometric separation of young hot stars from old red giants. This makes traditional color-magnitude diagram (CMD) analysis ineffective, as the diagrams are heavily affected by reddening and differential extinction \citep{GNSI}. Moreover, tidal forces and shocks in the GC can dissolve even massive clusters like the Arches within $\lesssim$10\,Myr \citep{dissolve_GC, cluster_dissolution}, blending them into the stellar background and rendering them undetectable through conventional methods.
+	
+	Spectroscopy can help identify massive young stars (MYSs) via key spectral features in the near-infrared, such as the absence of CO bandhead absorption and the presence of Br$\gamma$ or He\,I lines \citep{spec_class_1, spec_class_2}. However, spectroscopy requires high angular resolution and covers limited fields of view, making full surveys of the NSD prohibitively time-consuming.
+	
+	An alternative method is to identify co-moving groups—associations of stars sharing similar positions and velocities. This method is particularly promising for detecting the remnants of dissolved clusters. In a six-dimensional phase space (three for position and three for velocity), such groups are expected to exhibit smaller velocity dispersions than the field. While current catalogs for the GC provide accurate positions and proper motions in the plane of the sky, the line-of-sight distance can be estimated using stellar colors. Given the relatively uniform intrinsic colors of GC stars (with H$-$K$_s$ variation $\lesssim$0.01\,mag) and the large extinction variation \citep{GNSI, GNSIV, Ban_catalog, paco_NSD}, color differences are attributed mainly to extinction, and hence can serve as proxies for depth along the line of sight \citep{paco_NSD}.
+	
+	We have developed a new method to detect co-moving groups in this crowded and highly extincted region. Based on the \textit{DBSCAN} clustering algorithm \citep{dbscan}, our tool searches for over-densities in a five-dimensional parameter space (position, proper motion, and color). A similar method has been successfully applied to identify open clusters in Gaia data \citep{Castro2018}.
+	
+	Applying this methodology to the Sgr B1 region—a known H\,II complex and promising site of recent star formation—we identified multiple co-moving groups associated with previously cataloged massive stars \citep{Massive_stars}. One such group was independently identified in \cite{Ban_cluster}, located near a strong Paschen-$\alpha$ emitter \citep{HII_regions, Blue_SG}. We conducted follow-up spectroscopic observations in this region, confirming the presence of young, massive stars. Cross-matching these stars with data from the GALACTICNUCLEUS survey \citep{GNSI, GNSII} and proper motion catalogs \citep{LIBRALA2021}, we obtained photometry and kinematics to further constrain their nature and assess the likelihood of them belonging to coeval associations.
+	
+	
+	\textcolor{red}{The Galactic Center (GC), located at a distance of approximately $\sim$8.25\,kpc \citep{GC_distance_gravity}, hosts the Nuclear Stellar Disk (NSD)—a flattened, rotating structure spanning about 150\,pc in diameter and with a scale height of $\sim$40\,pc \citep{Sch2015, Ban_catalog, Launhardt_2002, Sormani2022}. \citet{three_cepheids} identified three classical Cepheids within the inner projected 40\,pc of the GC. This discovery suggests the formation of about $10^6$\,M$_\odot$ of stars in this region over the past $\sim$10\,Myr, a finding that aligns with the star formation history reported by \citet{paco_nature_2020}. With a star formation rate of $[0.2$--$0.8]$\,M$_\odot$/yr over the past 30\,Myr \citep{three_cepheids, paco_nature_2020}, the NSD stands out as the most prolific star-forming region in the Galaxy when averaged by volume.
+	This high star formation rate, however, contrasts with the small number of known young clusters in the NSD—the Arches and Quintuplet clusters—which together contribute only a small fraction of the inferred stellar mass. This discrepancy, known as the “missing clusters problem,” is not entirely unexpected. The GC's extreme conditions complicate the detection of young clusters. High and spatially variable extinction \citep{extinction_los, paco_exctinction} restricts observations to the near-infrared, while strong tidal fields and shocks can dissolve even massive clusters (up to $\sim$10$^4$\,M$_\odot$) within 10\,Myr \citep{dissolve_GC, cluster_dissolution}, blending them into the stellar background and hindering their detection through overdensities. These limitations also affect the effectiveness of color-magnitude diagrams (CMDs), which are dominated by reddening and offer little insight into stars' intrinsic colors \citep{GNSI}. Nonetheless, recent work has revealed a significant young stellar population—on the order of several $10^5$\,M$_\odot$—in regions like Sgr B1 and Sgr C by analyzing luminosity functions \citep{Paco_B1, Paco_SgrC}, supporting the scenario of coeval formation followed by rapid dissolution.
+	While spectroscopy offers a path to identifying young stellar associations, it is often constrained by its limited field of view and the high angular resolution required. Thus, a full spectroscopic survey of the NSD would be prohibitively time-consuming. Instead, a more efficient approach involves first identifying potential co-moving groups of stars \citep[e.g.,][]{Ban_cluster, comuving_yo}, and then targeting these regions with spectroscopy to confirm the presence of young, massive stars and characterize the group.
+	Co-moving groups are collections of stars that are close in space and share similar velocities, with a velocity dispersion smaller than the surrounding field population. These groups can be characterized in six dimensions: three spatial coordinates and three velocity components. While current GC catalogs provide only positions and proper motions in the plane of the sky, the third spatial dimension—line-of-sight distance—can be approximated through stellar colors. Due to the strong and variable extinction in the NSD \citep{GNSIV, Ban_catalog, paco_NSD} and the nearly constant intrinsic colors of most stars (with H$-$Ks variations $\lesssim$0.01\,mag; \citealt[see Fig.~33]{GNSI}), color differences are largely attributed to extinction. Hence, stars with similar colors likely lie at similar depths within the NSD \citep{paco_NSD}.
+	If a co-moving group is a remnant of a dissolving cluster or association, its stars should be relatively young (ages $\lesssim$10\,Myr). Young, massive stars (MYSs) can be distinguished from cool, late-type stars using near-infrared spectral lines such as CO and Br$\gamma$ \citep{spec_class_1, spec_class_2}. Cool stars exhibit $^{12}$CO bandhead absorptions at 2.30, 2.33, and 2.35\,$\mu$m, whereas MYSs lack these features and may show Br$\gamma$ emission or absorption at 2.16\,$\mu$m and/or He\,I absorption at 2.06\,$\mu$m.
+	A candidate co-moving group was identified in \citet{Ban_cluster}, located in an HII-emitting region \citep{HII_regions} with a strong Paschen-$\alpha$ emitting star \citep{Blue_SG, Massive_stars}, making it a promising site for hosting MYSs. We conducted spectroscopic observations of this area and analyzed the spectra of stars near the center of the group, selecting MYSs based on spectral features. We then cross-matched these stars with the GALACTICNUCLEUS survey \citep{GNSI, GNSII} and the proper motion catalog from \citet{LIBRALA2021}, obtaining both photometry and proper motion data.}
+	
+	\section{Methods}
+	
+	\begin{itemize}
+		\item Regular reduction with sky observatio
+		\item Photometry with holograpy
+	     \item Astrometry with SCAMP and SExtractor	
+	\end{itemize} 
+	
+	\subsection{GALACTICNUCLEUS survey}
+	
+	In order to compute proper motions we combiend two different epoch of GALACTICNUCLEUS survey (GNS), spareate for approximately seven years. 
+	
+	The GNS catalog \citep[][hereafter GNS\,I]{GNSII} was acquired with the wide-field near-infrared camera HAWK-I/VLT, with fast photometry mode and reduced with the speckle holography algorithm \citep[][]{Holography} to provide a high homogeneous angular resolution of 0.2". The survey covered an area of about $\sim$6000 pc$^{2}$ (see Fig. \ref{fig:gcview}) and provide accurate photometry for about $\sim 3.3 \times 10^{6}$ stars in the J, H and Ks bands, with an uncertainty of $\lesssim$ 0.05 mag in all three bands. Due to the extreme crowdiness of this enviroment sky background was estimated using dithered exposures of a dark cloud region near the Galactic Center ($\alpha \approx 17^\mathrm{h}48^\mathrm{m}01.55^\mathrm{s}$, $\delta \approx -28^\circ59'20''$), characterized by low stellar density. For further details  abut the reduction process, please refer to \cite{GNSI, GNSII}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=1\linewidth]{../images/gc_view}
+		\caption{Coverage of GNS on a Spitzer/IRAC combined mosaic at 3.6, 4.5 and 8 µm \citep{Spitzer_image}. Dashed lines indicate the total coverage of GNS. Solid boxes indicated the areas reduced for this study: white the test field and blue the target field }
+		\label{fig:gcview}
+	\end{figure}
+	
+	In 2022, seven years after  GNS\,I, a second epoch of imaging data was acquired,hereafter termed GNS\,II, ovelapping with GNS\,I . The general observing strategy and the reduction pipeline were similar for both surveys, although GNS\,II used only the H band.
+	
+	There are two main differences between the two epochs: One is the detector size. In  GNS\,I, the fast photometry mode was used, with a DIT of 1.26 seconds, which required using only a third of the detector, i.e. 2048$\times$768 pixels. In  GNS\,II we set a DIT of 3.3 seconds, which  allowed us to use the whole chip, 2048$\times$2048 pixels. In Fig. \ref{fig:gcview} we can appreciate the difference sizes  between the pointings . The second difference is the used of Ground-layer adaptive optics assisted by Laser \citep[GRAAL,][]{GRAAL} in  GNS\,II. The combination of a longer DIT with adaptive optics resulted in deeper and sharper images.
+	
+%	 \textcolor{red}{\textbf{Should I include this}: In the bottom right panel of Fig.  \ref{fig:lfuntions}, we show the H luminosity function for stars in the overlapping of the same two chips for the two different epochs. We can see that number of sources detected in  GNS\,II is more than double that in  GNS\,I, reaching over half a magnitude deeper.}
+%	
+%	\begin{figure}
+%		
+%		\includegraphics[width=	0.9\linewidth]{../images/l_funtions}
+%		\caption{Luminosity functions comparitive of GNS I and GNS II}
+%		\label{fig:lfuntions}
+%	\end{figure}
+	
+	
+
+	
+	
+%	For the firsr epoch, imaging data were obtained using the High Acuity Wide field K-band Imager (HAWK-I; \citep[HAWK-I]{HAWKI}) at ESO's Very Large Telescope (VLT) Unit Telescope 4. Observations were carried out in the $J$, $H$, and $K_s$ broadband filters. HAWK-I provides a $7.5'\times7.5'$ field of view  a pixel scale of $0.106''$ per pixel. In order to covering the f $15''$ degree gap between the HAWKI four detector we adopdted a random offset pattern within a box of $30''$. They took 20 exposures each at 49 random oﬀsets.
+%	
+%	To achieve high angular resolution ($\sim0.2''$ FWHM), short-exposure series were taken in fast-photometry mode, enabling the application of the speckle holography algorithm from \cite{Holography}. Short readout times required detector windowing.
+%	
+%	Sky background was estimated using dithered exposures of a dark cloud region near the Galactic Center ($\alpha \approx 17^\mathrm{h}48^\mathrm{m}01.55^\mathrm{s}$, $\delta \approx -28^\circ59'20''$), characterized by low stellar density. For further details please refer to \cite{GNSI, GNSII}
+%	
+%	The second were acquired with the new ground layer adaptive optics assisted by laser \citep[GRAAL,][]{GRAAL}.For this observation we use a larger integreation time which allow as to use the whole detector field of view.  In Fig. \ref{fig:gcview} we can appreciate the difference in size between GNS1 (solid boxes) and GNS2 (dashed boxes). Apart for this differences, we used the same obeserving and reduction strategy that in GNS1 \citep{GNSII}
+	
+	
+	
+	
+	
+	
+	\subsection{Geometric distortions correction}
+	
+	We used SCAMP \cite{SCAMP} to correct for geometric distortion and to compute the global astrometric solution. A detailed description of the geometric distortion correction process is beyond the scope of this paper; we provide only a summary here.  \footnote{The interested reader can check for example \cite{2013A&A...554A.101B}}. \textcolor{red}{Should I include a link to the pipeline?} SCAMP is feed on position catalogs created from each pointing with SExtractor software \citep{SEx}. Them, it computes the global solution by minimizing the squared positional differences between overlapping sources ($\chi^2_{\mathrm{astrom}}$) in pairs of catalogs:
+	
+	\begin{equation}
+		\chi^2_{\mathrm{astrom}} = \sum_s \sum_a \sum_{b > a}
+		\frac{ \left\| \boldsymbol{\xi}_a(\mathbf{x}_{s,a}) - \boldsymbol{\xi}_b(\mathbf{x}_{s,b}) \right\|^2 }
+		{ \sigma_{s,a}^2 + \sigma_{s,b}^2 }
+		\label{eq:1}
+	\end{equation}
+	
+	In Eq. \ref{eq:1}, $s$ indexes the matched sources, while $a$ and $b$ denote different images. The quantity $\mathbf{x}_{s,a}$ represents the observed position of source $s$ in catalog $a$, typically in pixel coordinates. The function $\boldsymbol{\xi}_a(\mathbf{x}_{s,a})$ is the transformation that maps these coordinates into a common astrometric reference frame using the current calibration parameters for catalog $a$. The term $\sigma_{s,a}$ denotes the positional uncertainty associated with source $s$ in catalog $a$. 
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=1\linewidth]{../images/distort_F20_f06_HKs_3}
+		\caption{Example of HAWKI mosaic camera distortion map provided for SCAMP for GNS2 data.}
+		\label{fig:scamp_exm}
+	\end{figure}
+	
+	 In Fig. \ref{fig:scamp_exm} we show an example of the camera distortion patterns in the HAWKI camera for a data set of GNS2. SCAMP produces an updated header for each of the input images that correct these distortions. Then we apply the correction to the original images and re-project them onto the same grid with SWARP \citep{SWARP}.
+	 
+	 
+	 \begin{itemize}
+	 	\item Show the quality in astrometry btw GNS1 and 2
+	 	\item show the quality in photometry
+	 	
+	 \end{itemize}
+	 
+	 \subsection{The Proper Motions Catalog}
+	 
+	We have reduced an analyzed two different areas and compute proper motions. By applying the holographic technique \citep{Holography} to the gemotric correctec images, we were able to reach a excelent accurasy in photometry and unprecedented precission in proper motions. 
+	 
+	 Following we show the main thecnical caractheristsc of the future GNS proper motion catalog (Martínez-Arranz et al. in prep.)
+	 
+	 \subsubsection{Astrometry} 
+	 
+	 We have reduced te 
+	 
+	 \begin{figure}
+	 	\centering
+	 	\includegraphics[width=1\linewidth]{../images/dpos_lb_H}
+	 	\caption{Astrometri uncertainty. Left: Position uncertainty versus H magnitude for the stars in the solid white square in Fig. \ref{fig:gcview}. Left: Distribution of the position uncertainty across the same field. Black stars mark the position of Gaia stars that we use for proper motions comparison.}
+	 	\label{fig:dposhgns1}
+	 \end{figure}
+	 
+	 \subsubsection{Proper motion calculations}
+	 
+	 \begin{itemize}
+	 	\item Proyected coordinates to a common tangential plane
+	 		\item Proyected coordinates of Gaia
+	 \end{itemize}
+	 
+	 \textcolor{red}{To align GNS II with GNS I, we utilized common stars. Initially, we estimated the displacement and rotation angle between the datasets by aligning them through identifying similar three-point asterisms using the \texttt{astroalign} package in Python \cite{Astroalign}. We then performed a secondary alignment using a polynomial fit (IDL \texttt{polywarp}). For the polynomial solution we use stars that are closer that 20 mas, of these stars we regeted the ones with difference in magnitude over 3$\sigma$, with the remaining stars we stimate the polynomial transformation and apply it to the whole catalog. The we match the catalogs again and iterate this procedure  until the number of common stars stabilized. We assessed alignment uncertainties using a Jackknife resampling method and determined that a second-degree polynomial provided the most precise alignment.
+	 	Following the alignment, we calculated the velocities for each star by taking the difference in positions of the common stars and dividing by the time baseline (approximately 7 years). Uncertainties were computed quadratically, accounting for positional errors for each star and alignment uncertainties for the GNS I stars. Subsequently, we focused only on stars with proper motion uncertainties under 1.0 mas/yr and an absolute magnitude difference from GNS of less than 0.5 magnitudes.}
+	 
+	 In Fig. \ref{} we show the proper motion distribution for the test filed. The dispersion of the velocities are in agreement with \textbf{TAL y CUAL}
+	
+	We compare our proper motions with the Gaia stars for DR3 \citep{GDR3}. We proyected the position and velocities of Gaia stars to the same tangential plane fo GNS. For the set of Gaia stars, we performed a quality cut: i) We avoided Gaia stars with magnitudes fainter than G = 19 and brigther than 13, to prevent high astrometric uncertainties; ii) We discarded Gaia stars with a close Gaia companion to avoid mismatching; iii) We selected only sources with a 5-parameter astrometric solution (position, parallax, and proper motion); and iv) We eliminated Gaia sources with negative parallax, which is unphysical. We refer to the remaining Gaia stars after this quality cut as the reference stars. 
+	
+	In Fig. \ref{fig:gaiaresipm} we show the Gaia-GNS proper motion residuals. After clipping the outlayers we reach a level of agreedment of Gaia ~0.6 mas/yr in the parallel component and   ~0.5 mas/yr in the perpendicular
+	 
+	 \begin{figure}
+	 	\centering
+	 	\includegraphics[width=0.9\linewidth]{../images/gaia_resi_pm}
+	 	\caption{Gaia-GNS proper motion residuals for the parallel and perpendicular componets. Red dashed lines indicate the 3$\sigma$ level of the distribution. Grey histogram represnte the whole set of mathces. Blue histogram represent the 3$\sigma$ clipped distributions}
+	 	\label{fig:gaiaresipm}
+	 \end{figure}
+	 
+	
+
+%\begin{figure}[htbp]
+%	\centering
+%	\resizebox{\columnwidth}{!}{\input{flowchart}} % Ensures it fits within the column
+%	\caption{Flowchart of the data reduction and analysis pipeline.}
+%	\label{fig:flowchart}
+%\end{figure}
+%	
+	
+	
+	\section{Results}
+  \begin{itemize}
+  	\item Compare with Hosek
+  	\item Compare with Libralato
+  	\item Compare with Gaia
+  \end{itemize}
+	
+	\section{Conclusions}
+	Discussion and conclusions.
+	
+	\bibliographystyle{aa}
+	\bibliography{references.bib} % assumes yourbibfile.bib is in your folder
+	
+\end{document}
