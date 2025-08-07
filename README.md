@@ -2,4 +2,4 @@ In orther to check where the plots were created, check the metadata. In the shel
 
 .. code::
 
-	exiftoll <your_plot.png> 
+	exiftool <your_plot.png> 
