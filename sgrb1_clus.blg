@@ -5,50 +5,48 @@ The style file: aa.bst
 Database file #1: references.bib
 Warning--I didn't find a database entry for "extinction_los"
 Warning--I didn't find a database entry for "dbscan"
-Warning--I didn't find a database entry for "Castro2018"
 Warning--I didn't find a database entry for "HII_regions"
 Warning--I didn't find a database entry for "Blue_SG"
-Warning--I didn't find a database entry for "LIBRALA2021"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 39 entries,
+You've used 40 entries,
             3039 wiz_defined-function locations,
-            965 strings with 20747 characters,
-and the built_in function-call counts, 37207 in all, are:
-= -- 2762
-> -- 4870
+            968 strings with 21152 characters,
+and the built_in function-call counts, 38220 in all, are:
+= -- 2837
+> -- 5007
 < -- 9
-+ -- 1632
-- -- 1588
-* -- 3565
-:= -- 6963
-add.period$ -- 39
-call.type$ -- 39
-change.case$ -- 680
-chr.to.int$ -- 36
-cite$ -- 39
-duplicate$ -- 760
-empty$ -- 1090
-format.name$ -- 1683
-if$ -- 7258
++ -- 1678
+- -- 1633
+* -- 3663
+:= -- 7154
+add.period$ -- 40
+call.type$ -- 40
+change.case$ -- 699
+chr.to.int$ -- 37
+cite$ -- 40
+duplicate$ -- 778
+empty$ -- 1117
+format.name$ -- 1730
+if$ -- 7455
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 35
-newline$ -- 121
-num.names$ -- 160
-pop$ -- 687
+missing$ -- 36
+newline$ -- 124
+num.names$ -- 164
+pop$ -- 706
 preamble$ -- 1
-purify$ -- 680
+purify$ -- 699
 quote$ -- 0
-skip$ -- 668
+skip$ -- 684
 stack$ -- 0
-substring$ -- 883
+substring$ -- 907
 swap$ -- 46
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 351
+type$ -- 360
 warning$ -- 0
-while$ -- 160
+while$ -- 164
 width$ -- 0
-write$ -- 393
-(There were 6 warnings)
+write$ -- 403
+(There were 4 warnings)

@@ -68,7 +68,7 @@
 	
 	An alternative method is to identify co-moving group, associations of stars sharing similar positions and velocities and exhibit smaller velocity dispersions than the field stars.  In  \citep{comuving_yo} we presented tecnique to detect co-moving groups in this crowded and highly extincted region and found three different co-moving groups wich known massive young stars. We confirm throug spectroscopci data that partially overlaped one of these three group, that several of its member were massive young stars \citep{Candela} confirming the cluster nature of it. 
 	
-	In the aforementioned study we were limited for the extension  of the proper motion catalog we have to our dispossal \cite{LIBRALA2021}}, which covered a relative small part of the NSD. In the present study we use the much larger \textbf{GNS PM CATALOG} (\textbf{REF NEED IT}), covering a larger portion of the NSD, including several areas of intense HII emision, the smoking gun of recent star formation. In the present case we focus in Sgr-B1 region. kk
+	In the aforementioned study we were limited for the extension  of the proper motion catalog we have to our dispossal \cite{LIBRALA2021}, which covered a relative small part of the NSD. In the present study we use the much larger \textbf{GNS PM CATALOG} (\textbf{REF NEED IT}), covering a larger portion of the NSD, including several areas of intense HII emision, the smoking gun of recent star formation. In the present case we focus in Sgr-B1 region. 
 	
 	
 	Based on the \textit{DBSCAN} clustering algorithm \citep{dbscan}, our tool searches for over-densities in a five-dimensional parameter space, position, proper motion, and relative line-of-sight distance. For the later, we use color as a proxy. Given the relatively uniform intrinsic colors of GC stars (with H$-$K$_s$ variation $\lesssim$0.01\,mag) and the large extinction variation \citep{GNSI, GNSIV, Ban_catalog, paco_NSD}, color differences are attributed mainly to extinction, and hence can serve as proxies for depth along the line of sight \citep{paco_NSD}. For more details, please refere to n \citep{comuving_yo}
@@ -104,7 +104,7 @@
 	
 	\begin{figure}
 		\centering
-		\includegraphics[width=1\linewidth]{../images/gc_view}
+		\includegraphics[width=1\linewidth]{../images/gc_GNS_and_Libr}
 		\caption{Coverage of GNS on a Spitzer/IRAC combined mosaic at 3.6, 4.5 and 8 µm \citep{Spitzer_image}. Dashed lines indicate the total coverage of GNS. Solid boxes indicated the areas reduced for this study: white the test field and blue the target field }
 		\label{fig:gcview}
 	\end{figure}
@@ -192,12 +192,17 @@
 	 		\item Proyected coordinates of Gaia
 	 \end{itemize}
 	 
-	 \textcolor{red}{To align GNS II with GNS I, we utilized common stars. Initially, we estimated the displacement and rotation angle between the datasets by aligning them through identifying similar three-point asterisms using the \texttt{astroalign} package in Python \cite{Astroalign}. We then performed a secondary alignment using a polynomial fit (IDL \texttt{polywarp}). For the polynomial solution we use stars that are closer that 20 mas, of these stars we regeted the ones with difference in magnitude over 3$\sigma$, with the remaining stars we stimate the polynomial transformation and apply it to the whole catalog. The we match the catalogs again and iterate this procedure  until the number of common stars stabilized. We assessed alignment uncertainties using a Jackknife resampling method and determined that a second-degree polynomial provided the most precise alignment.
-	 	Following the alignment, we calculated the velocities for each star by taking the difference in positions of the common stars and dividing by the time baseline (approximately 7 years). Uncertainties were computed quadratically, accounting for positional errors for each star and alignment uncertainties for the GNS I stars. Subsequently, we focused only on stars with proper motion uncertainties under 1.0 mas/yr and an absolute magnitude difference from GNS of less than 0.5 magnitudes.}
 	 
-	 In Fig. \ref{} we show the proper motion distribution for the test filed. The dispersion of the velocities are in agreement with \textbf{TAL y CUAL}
+	 The script computes stellar proper motions by matching two catalogs of astronomical sources obtained at different epochs. The procedure is as follows:
+	 
+	The proper motions were computed using two epochs of observations of the same sky region, one from 2015 and the other from 2022. We derived \textit{relative proper motions}, meaning that one epoch (the destination) was chosen as the astrometric reference frame, and the other epoch (the source) was aligned to it. 
 	
-	We compare our proper motions with the Gaia stars for DR3 \citep{GDR3}. We proyected the position and velocities of Gaia stars to the same tangential plane fo GNS. For the set of Gaia stars, we performed a quality cut: i) We avoided Gaia stars with magnitudes fainter than G = 19 and brigther than 13, to prevent high astrometric uncertainties; ii) We discarded Gaia stars with a close Gaia companion to avoid mismatching; iii) We selected only sources with a 5-parameter astrometric solution (position, parallax, and proper motion); and iv) We eliminated Gaia sources with negative parallax, which is unphysical. We refer to the remaining Gaia stars after this quality cut as the reference stars. 
+	First, the stellar coordinates from both epochs were projected onto the same tangential plane. Cross-matches were then identified within a small matching radius. A similarity transformation was computed from the matched sources and applied to the entire source catalog. The catalogs were cross-matched again, and a first-degree polynomial transformation was determined from the new matches and applied to all sources. This process was iteratively repeated until the number of matches stabilized or decreased. 
+	
+	Subsequently, the polynomial degree was increased to two, and the iterative alignment procedure was repeated. The same steps were then performed with a third-degree polynomial, resulting in the final aligned catalogs. The positions in the final (transformed) source catalog were compared to those of the destination catalog, and the positional differences were divided by the time baseline between epochs to obtain the proper motions. 
+	
+	
+	Finally, we compared our proper motions with the Gaia stars for DR3 \citep{GDR3}. We proyected the position and velocities of Gaia stars to the same tangential. For the set of Gaia stars, we performed a quality cut: i) We avoided Gaia stars with magnitudes fainter than G = 19 and brigther than 13, to prevent high astrometric uncertainties; ii) We discarded Gaia stars with a close Gaia companion to avoid mismatching; iii) We selected only sources with a 5-parameter astrometric solution (position, parallax, and proper motion); and iv) We eliminated Gaia sources with negative parallax, which is unphysical. We refer to the remaining Gaia stars after this quality cut as the reference stars. 
 	
 	In Fig. \ref{fig:gaiaresipm} we show the Gaia-GNS proper motion residuals. After clipping the outlayers we reach a level of agreedment of Gaia ~0.6 mas/yr in the parallel component and   ~0.5 mas/yr in the perpendicular
 	 

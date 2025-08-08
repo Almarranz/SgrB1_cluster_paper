@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{40}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Bartko} {et~al.}(2010){Bartko}, {Martins}, {Trippe}, {Fritz},
@@ -123,6 +123,12 @@ Dong, H., Wang, Q.~D., Cotera, A., {et~al.} 2011, Monthly Notices of the Royal
   {Mezger}}]{Lyman_flux}
 {Launhardt}, R., {Zylka}, R., \& {Mezger}, P.~G. 2002{\natexlab{b}}, \aap, 384,
   112
+
+\bibitem[{{Libralato} {et~al.}(2021){Libralato}, {Lennon}, {Bellini}, {van der
+  Marel}, {Clark}, {Najarro}, {Patrick}, {Anderson}, {Bedin}, {Crowther}, {de
+  Mink}, {Evans}, {Platais}, {Sabbi}, \& {Sohn}}]{LIBRALA2021}
+{Libralato}, M., {Lennon}, D.~J., {Bellini}, A., {et~al.} 2021, \mnras, 500,
+  3213
 
 \bibitem[{{Lu} {et~al.}(2013){Lu}, {Do}, {Ghez}, {Morris}, {Yelda}, \&
   {Matthews}}]{Lu_2013}
